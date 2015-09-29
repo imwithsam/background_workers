@@ -1,6 +1,6 @@
 class Quote < ActiveRecord::Base
   def self.generate
-    5000.times do
+    10000.times do
       Quote.create(
         body:   Faker::Hacker.say_something_smart.capitalize,
         author: Faker::Name.name,
